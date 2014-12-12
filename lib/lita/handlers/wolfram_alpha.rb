@@ -9,6 +9,9 @@ module Lita
       route(/^!alpha\s*(.*)/i, :handle_wolfram_query)
 
       def handle_wolfram_query(response)
+        unless config.app_id and config.api_uri
+          Lita.logger.error "Configuration error!"
+        end
         query = response.matches[0][0]
         xml_doc = make_api_call query
         response.reply query
@@ -20,7 +23,7 @@ module Lita
 
       def build_uri(query)
         uri = config.api_uri.sub '[query]', query
-        uri = uri.sub '[appip]', config.app_ip
+        uri = uri.sub '[appip]', config.app_id
       end
     end
     Lita.register_handler(WolframAlpha)
