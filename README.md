@@ -4,10 +4,10 @@ TODO: Add a description of the plugin.
 
 ## Installation
 
-Add lita-forecast-io to your Lita instance's Gemfile:
+Add lita-wolfram-alpha to your Lita instance's Gemfile:
 
 ``` ruby
-gem "lita-forecast-io"
+gem "lita-wolfram-alpha"
 ```
 
 

@@ -1,4 +1,5 @@
 require 'rest_client'
+require 'nokogiri'
 
 module Lita
   module Handlers
@@ -13,17 +14,21 @@ module Lita
           Lita.logger.error "Configuration error!"
         end
         query = response.matches[0][0]
-        xml_doc = make_api_call query
-        response.reply query
+        api_response = make_api_call query
+        response.reply api_response
       end
 
       def make_api_call(query)
         uri = build_uri query
+        response = RestClient.get(uri)
+        noko_doc = Nokogiri::XML response.to_s
+        plaintext_nodes = noko_doc.xpath('//plaintext')
+        plaintext_nodes[1].child.to_s
       end
 
       def build_uri(query)
         uri = config.api_uri.sub '[query]', query
-        uri = uri.sub '[appip]', config.app_id
+        uri = uri.sub '[appid]', config.app_id
       end
     end
     Lita.register_handler(WolframAlpha)
