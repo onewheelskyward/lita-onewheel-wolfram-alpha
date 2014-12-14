@@ -13,7 +13,7 @@ describe Lita::Handlers::WolframAlpha, :lita_handler => true do
 
     registry.configure do |config|
       config.handlers.wolfram_alpha.api_uri = 'http://api.wolframalpha.com/v2/query?input=[query]&appid=[appid]'
-      config.handlers.wolfram_alpha.app_id = 'LH99EJ-YTE6LQU6VJ'
+      config.handlers.wolfram_alpha.app_id = 'app-id-here'
     end
   end
 
