@@ -27,7 +27,7 @@ module Lita
       end
 
       def build_uri(query)
-        uri = config.api_uri.sub '[query]', query
+        uri = config.api_uri.sub '[query]', CGI::escape query
         uri = uri.sub '[appid]', config.app_id
       end
     end
