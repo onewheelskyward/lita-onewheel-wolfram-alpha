@@ -7,7 +7,6 @@ describe Lita::Handlers::WolframAlpha, :lita_handler => true do
     # allow(::Geocoder).to receive(:search) { [mock_geocoder] }  # It expects an array of geocoder objects.
 
     # Mock up the Wolfram Alpha call.
-    # Todo: add some other mocks to allow more edgy testing (rain percentages, !rain eightball replies, etc
     # mock_weather_json = File.open("spec/mock_weather.json").read
     # allow(RestClient).to receive(:get) { mock_weather_json }
 
