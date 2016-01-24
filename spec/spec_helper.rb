@@ -5,8 +5,9 @@ SimpleCov.formatters = [
   Coveralls::SimpleCov::Formatter
 ]
 SimpleCov.start { add_filter '/spec/' }
+Coveralls.wear!
 
-require_relative '../lib/lita-onewheel-wolfram-alpha'
+require 'lita-onewheel-wolfram-alpha'
 require 'lita/rspec'
 
 # A compatibility mode is provided for older plugins upgrading from Lita 3. Since this plugin
