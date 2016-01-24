@@ -1,6 +1,11 @@
 lita-onewheel-wolfram-alpha
 ----
 
+.. image:: https://coveralls.io/repos/github/onewheelskyward/lita-onewheel-wolfram-alpha/badge.svg?branch=master
+  :target: https://coveralls.io/github/onewheelskyward/lita-onewheel-wolfram-alpha?branch=master
+.. image:: https://travis-ci.org/onewheelskyward/lita-onewheel-wolfram-alpha.svg?branch=master
+  :target: https://travis-ci.org/onewheelskyward/lita-onewheel-wolfram-alpha
+
 Queries Wolfram Alpha for the text specified.
 
 Installation
