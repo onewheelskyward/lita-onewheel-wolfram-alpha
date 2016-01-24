@@ -4,3 +4,5 @@
 Gemfile.lock
 coverage
 *.iml
+lita_config.rb
+.rbenv-gemsets

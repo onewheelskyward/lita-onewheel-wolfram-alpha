@@ -1,12 +1,12 @@
 require 'simplecov'
-# require "coveralls"
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+require 'coveralls'
+SimpleCov.formatters = [
   SimpleCov::Formatter::HTMLFormatter,
-  # Coveralls::SimpleCov::Formatter
+  Coveralls::SimpleCov::Formatter
 ]
 SimpleCov.start { add_filter '/spec/' }
 
-require_relative '../lib/lita-wolfram-alpha'
+require_relative '../lib/lita-onewheel-wolfram-alpha'
 require 'lita/rspec'
 
 # A compatibility mode is provided for older plugins upgrading from Lita 3. Since this plugin

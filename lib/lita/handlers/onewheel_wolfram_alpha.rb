@@ -3,7 +3,7 @@ require 'nokogiri'
 
 module Lita
   module Handlers
-    class WolframAlpha < Handler
+    class OnewheelWolframAlpha < Handler
       config :app_id
       config :api_uri
 
@@ -11,7 +11,7 @@ module Lita
 
       def handle_wolfram_query(response)
         unless config.app_id and config.api_uri
-          Lita.logger.error "Configuration error!"
+          Lita.logger.error 'Configuration error!'
           return
         end
         query = response.matches[0][0]
@@ -32,6 +32,6 @@ module Lita
         uri = uri.sub '[appid]', config.app_id
       end
     end
-    Lita.register_handler(WolframAlpha)
+    Lita.register_handler(OnewheelWolframAlpha)
   end
 end

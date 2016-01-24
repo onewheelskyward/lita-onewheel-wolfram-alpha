@@ -1,6 +1,6 @@
 require_relative '../../spec_helper'
 
-describe Lita::Handlers::WolframAlpha, :lita_handler => true do
+describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
 
   before(:each) do
     # mock_geocoder = ::Geocoder::Result::Google.new({'formatted_address' => 'Portland, OR', 'geometry' => { 'location' => { 'lat' => 45.523452, 'lng' => -122.676207 }}})
@@ -11,12 +11,12 @@ describe Lita::Handlers::WolframAlpha, :lita_handler => true do
     # allow(RestClient).to receive(:get) { mock_weather_json }
 
     registry.configure do |config|
-      config.handlers.wolfram_alpha.api_uri = 'http://api.wolframalpha.com/v2/query?input=[query]&appid=[appid]'
-      config.handlers.wolfram_alpha.app_id = 'app-id-here'
+      config.handlers.onewheel_wolfram_alpha.api_uri = 'http://api.wolframalpha.com/v2/query?input=[query]&appid=[appid]'
+      config.handlers.onewheel_wolfram_alpha.app_id = 'app-id-here'
     end
   end
 
-  it { is_expected.to route('!alpha') }
+  it { is_expected.to route_command('alpha') }
 
   it 'will work' do
     send_message '!alpha pi'

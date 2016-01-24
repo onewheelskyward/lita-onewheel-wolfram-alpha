@@ -4,4 +4,4 @@ Lita.load_locales Dir[File.expand_path(
   File.join('..', '..', 'locales', '*.yml'), __FILE__
 )]
 
-require 'lita/handlers/wolfram_alpha'
+require 'lita/handlers/onewheel_wolfram_alpha'
