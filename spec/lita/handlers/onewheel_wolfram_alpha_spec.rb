@@ -7,8 +7,8 @@ describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
     # allow(::Geocoder).to receive(:search) { [mock_geocoder] }  # It expects an array of geocoder objects.
 
     # Mock up the Wolfram Alpha call.
-    # mock_weather_json = File.open("spec/mock_weather.json").read
-    # allow(RestClient).to receive(:get) { mock_weather_json }
+    mock_xml = File.open('spec/fixtures/pi.xml').read
+    allow(RestClient).to receive(:get) { mock_xml }
 
     registry.configure do |config|
       config.handlers.onewheel_wolfram_alpha.api_uri = 'http://api.wolframalpha.com/v2/query?input=[query]&appid=[appid]'
@@ -19,7 +19,7 @@ describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
   it { is_expected.to route_command('alpha') }
 
   it 'will work' do
-    send_message '!alpha pi'
-    expect(replies.last).to eq('3.1415926535897932384626433832795028841971693993751058...')
+    send_command 'alpha pi'
+    expect(replies.last).to eq('3.141592653589793238462643383279502884197169399375105820974...')
   end
 end

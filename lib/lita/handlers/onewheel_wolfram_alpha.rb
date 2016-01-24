@@ -7,7 +7,7 @@ module Lita
       config :app_id
       config :api_uri
 
-      route(/^alpha\s*(.*)/i, :handle_wolfram_query)
+      route(/^alpha\s*(.*)/i, :handle_wolfram_query, command: true)
 
       def handle_wolfram_query(response)
         unless config.app_id and config.api_uri
