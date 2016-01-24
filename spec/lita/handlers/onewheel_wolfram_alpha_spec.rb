@@ -22,4 +22,13 @@ describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
     send_command 'alpha pi'
     expect(replies.last).to eq('3.141592653589793238462643383279502884197169399375105820974...')
   end
+
+  it 'will error missing config' do
+    registry.configure do |config|
+      config.handlers.onewheel_wolfram_alpha.api_uri = 'http://api.wolframalpha.com/v2/query?input=[query]&appid=[appid]'
+      config.handlers.onewheel_wolfram_alpha.app_id = nil
+    end
+    send_command 'alpha pi'
+    expect(replies.last).to eq(nil)
+  end
 end
