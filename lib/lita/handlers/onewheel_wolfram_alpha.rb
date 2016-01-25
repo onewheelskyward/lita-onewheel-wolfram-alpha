@@ -23,8 +23,13 @@ module Lita
         uri = build_uri query
         response = RestClient.get(uri)
         noko_doc = Nokogiri::XML response.to_s
-        plaintext_nodes = noko_doc.xpath('//plaintext')
-        plaintext_nodes[1].child.to_s
+        success_node = noko_doc.xpath('queryresult').attribute('success')
+        if success_node.to_s == 'true'
+          plaintext_nodes = noko_doc.xpath('//plaintext')
+          plaintext_nodes[1].child.to_s
+        else
+          "Wolfram couldn't parse #{query}."
+        end
       end
 
       def build_uri(query)

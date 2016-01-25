@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='false'
+             error='false'
+             numpods='0'
+             datatypes=''
+             timedout=''
+             timedoutpods=''
+             timing='0.367'
+             parsetiming='0.064'
+             parsetimedout='false'
+             recalculate=''
+             id=''
+             host='http://www4b.wolframalpha.com'
+             server='48'
+             related=''
+             version='2.6'/>

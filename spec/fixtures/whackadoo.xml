@@ -1,0 +1,243 @@
+
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+             error='false'
+             numpods='11'
+             datatypes='Gene,Species'
+             timedout=''
+             timedoutpods=''
+             timing='3.88'
+             parsetiming='0.126'
+             parsetimedout='false'
+             recalculate=''
+             id='MSPa127121e526f37g26886800002beidfh82d64fcd4'
+             host='http://www4c.wolframalpha.com'
+             server='7'
+             related='http://www4c.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa127221e526f37g2688680000580376889e4hb76a&amp;s=7'
+             version='2.6'>
+  <pod title='Input interpretation'
+       scanner='Identity'
+       id='Input'
+       position='100'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP127321e526f37g2688680000621adg28i72609e1?MSPStoreType=image/gif&amp;s=7'
+           alt='wkd  (fruit fly gene)'
+           title='wkd  (fruit fly gene)'
+           width='129'
+           height='18' />
+      <plaintext>wkd  (fruit fly gene)</plaintext>
+    </subpod>
+  </pod>
+  <pod title='Standard name'
+       scanner='Data'
+       id='StandardName:GeneData'
+       position='200'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP127421e526f37g26886800004baif3d1bee40i64?MSPStoreType=image/gif&amp;s=7'
+           alt='whacked'
+           title='whacked'
+           width='58'
+           height='18' />
+      <plaintext>whacked</plaintext>
+    </subpod>
+  </pod>
+  <pod title='Alternate names'
+       scanner='Data'
+       id='AlternateNames:GeneData'
+       position='300'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP127521e526f37g26886800002e2h3e746e98hg38?MSPStoreType=image/gif&amp;s=7'
+           alt='cg5344  |  CG5344  |  wkd-PA  |  wkd-PB  |  ...'
+           title='cg5344  |  CG5344  |  wkd-PA  |  wkd-PB  |  ...'
+           width='328'
+           height='18' />
+      <plaintext>cg5344  |  CG5344  |  wkd-PA  |  wkd-PB  |  ...</plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='More'
+             input='AlternateNames:GeneData__More' />
+    </states>
+  </pod>
+  <pod title='Location'
+       scanner='Data'
+       id='Location:GeneData'
+       position='400'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP127621e526f37g268868000012702h57f25bf4ag?MSPStoreType=image/gif&amp;s=7'
+           alt='species | Drosophila melanogaster  (fruit fly)
+locus | chromosome 3R  |  86E11
+strand | plus
+coordinates | 7407298 to 7411027'
+           title='species | Drosophila melanogaster  (fruit fly)
+locus | chromosome 3R  |  86E11
+strand | plus
+coordinates | 7407298 to 7411027'
+           width='349'
+           height='132' />
+      <plaintext>species | Drosophila melanogaster  (fruit fly)
+        locus | chromosome 3R  |  86E11
+        strand | plus
+        coordinates | 7407298 to 7411027</plaintext>
+    </subpod>
+  </pod>
+  <pod title='Reference sequence'
+       scanner='Data'
+       id='ReferenceSequence:GeneData'
+       position='500'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP127721e526f37g268868000049abc585a05dfi78?MSPStoreType=image/gif&amp;s=7'
+           alt='ATCGCACAGTAGTCGCTTCGTTGCCATCGCCAATCTCGCT
+...  AATATAAAACTTGAATACTAATAAAACAAAATATACCG'
+           title='ATCGCACAGTAGTCGCTTCGTTGCCATCGCCAATCTCGCT
+...  AATATAAAACTTGAATACTAATAAAACAAAATATACCG'
+           width='387'
+           height='36' />
+      <plaintext>ATCGCACAGTAGTCGCTTCGTTGCCATCGCCAATCTCGCT
+        ...  AATATAAAACTTGAATACTAATAAAACAAAATATACCG</plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='More'
+             input='ReferenceSequence:GeneData__More' />
+    </states>
+  </pod>
+  <pod title='Reference sequence length'
+       scanner='Data'
+       id='Length:GeneData'
+       position='600'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP127821e526f37g26886800002083887dc3fdadef?MSPStoreType=image/gif&amp;s=7'
+           alt='3.73 kbp  (kilobase pairs)'
+           title='3.73 kbp  (kilobase pairs)'
+           width='157'
+           height='18' />
+      <plaintext>3.73 kbp  (kilobase pairs)</plaintext>
+    </subpod>
+  </pod>
+  <pod title='Nearby genes'
+       scanner='Data'
+       id='NearbyGenes:GeneData'
+       position='700'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP127921e526f37g26886800000d3gachh811ae366?MSPStoreType=image/gif&amp;s=7'
+           alt=''
+           title=''
+           width='450'
+           height='99' />
+      <plaintext></plaintext>
+    </subpod>
+    <states count='2'>
+      <state name='More'
+             input='NearbyGenes:GeneData__More' />
+      <state name='Show table'
+             input='NearbyGenes:GeneData__Show table' />
+    </states>
+  </pod>
+  <pod title='Gene splicing structures'
+       scanner='Data'
+       id='CodingSequencesGraphic:GeneData'
+       position='800'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP128021e526f37g268868000014g0gb76g3af8860?MSPStoreType=image/gif&amp;s=7'
+           alt=''
+           title=''
+           width='450'
+           height='98' />
+      <plaintext></plaintext>
+    </subpod>
+    <states count='2'>
+      <state name='Show legend'
+             input='CodingSequencesGraphic:GeneData__Show legend' />
+      <state name='Show table'
+             input='CodingSequencesGraphic:GeneData__Show table' />
+    </states>
+  </pod>
+  <pod title='Protein names'
+       scanner='Data'
+       id='ProteinNames:GeneData'
+       position='900'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP128121e526f37g268868000040dfa067hea8ghcc?MSPStoreType=image/gif&amp;s=7'
+           alt='whacked CG5344-PA, isoform A  |  whacked CG5344-PB, isoform B'
+           title='whacked CG5344-PA, isoform A  |  whacked CG5344-PB, isoform B'
+           width='450'
+           height='18' />
+      <plaintext>whacked CG5344-PA, isoform A  |  whacked CG5344-PB, isoform B</plaintext>
+    </subpod>
+  </pod>
+  <pod title='Protein molecular weight'
+       scanner='Data'
+       id='ProteinMolecularWeight:GeneData'
+       position='1000'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP128221e526f37g26886800003aeicb7fh2a85cfd?MSPStoreType=image/gif&amp;s=7'
+           alt='41.92 kDa  (kilodaltons)'
+           title='41.92 kDa  (kilodaltons)'
+           width='147'
+           height='18' />
+      <plaintext>41.92 kDa  (kilodaltons)</plaintext>
+    </subpod>
+  </pod>
+  <pod title='Homologs across organisms'
+       scanner='Data'
+       id='HomologsAcrossOrganisms:GeneData'
+       position='1100'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www4c.wolframalpha.com/Calculate/MSP/MSP128321e526f37g26886800004122ga6569a57dai?MSPStoreType=image/gif&amp;s=7'
+           alt=''
+           title=''
+           width='490'
+           height='382' />
+      <plaintext></plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='Show legend'
+             input='HomologsAcrossOrganisms:GeneData__Show legend' />
+    </states>
+  </pod>
+  <assumptions count='1'>
+    <assumption type='Clash'
+                word='whackadoo'
+                template='Assuming &quot;${word}&quot; is ${desc1}. Use as ${desc2} instead'
+                count='2'>
+      <value name='Gene'
+             desc='a gene'
+             input='*C.whackadoo-_*Gene-' />
+      <value name='Word'
+             desc='a word'
+             input='*C.whackadoo-_*Word-' />
+    </assumption>
+  </assumptions>
+  <warnings count='1'>
+    <spellcheck word='whackadoo'
+                suggestion='whacked'
+                text='Interpreting &quot;whackadoo&quot; as &quot;whacked&quot;' />
+  </warnings>
+  <sources count='2'>
+    <source url='http://www.wolframalpha.com/sources/GeneDataSourceInformationNotes.html'
+            text='Gene data' />
+    <source url='http://www.wolframalpha.com/sources/GenomeSequenceDataSourceInformationNotes.html'
+            text='Genome sequence data' />
+  </sources>
+</queryresult>
