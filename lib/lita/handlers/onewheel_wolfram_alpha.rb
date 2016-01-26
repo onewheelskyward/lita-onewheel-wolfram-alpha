@@ -16,20 +16,29 @@ module Lita
         end
         query = response.matches[0][0]
         api_response = make_api_call query
-        response.reply api_response
+        reply = parse_response api_response, query
+        response.reply reply
+      end
+
+      def parse_response(noko_doc, query)
+        success_node = noko_doc.xpath('queryresult').attribute('success')
+        if success_node.to_s == 'true'
+          pods = noko_doc.xpath('//pod')
+          if pods[1].attribute('title').to_s == 'Plot'
+            pods[1].xpath('//img')[1].attribute('src').to_s
+          else
+            pods[1].xpath('//plaintext')[1].child.to_s
+          end
+
+        else
+          "Wolfram couldn't parse #{query}."
+        end
       end
 
       def make_api_call(query)
         uri = build_uri query
         response = RestClient.get(uri)
-        noko_doc = Nokogiri::XML response.to_s
-        success_node = noko_doc.xpath('queryresult').attribute('success')
-        if success_node.to_s == 'true'
-          plaintext_nodes = noko_doc.xpath('//plaintext')
-          plaintext_nodes[1].child.to_s
-        else
-          "Wolfram couldn't parse #{query}."
-        end
+        Nokogiri::XML response.to_s
       end
 
       def build_uri(query)

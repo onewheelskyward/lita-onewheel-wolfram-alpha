@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-onewheel-wolfram-alpha'
-  spec.version       = '0.0.0'
+  spec.version       = '0.1.0'
   spec.authors       = ['Andrew Kreps']
   spec.email         = ['andrew.kreps@gmail.com']
   spec.description   = %q{Lita interface to Wolfram Alpha.}

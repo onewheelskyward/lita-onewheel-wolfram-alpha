@@ -31,6 +31,12 @@ describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
     expect(replies.last).to eq('Wolfram couldn\'t parse boopadoop.')
   end
 
+  it 'will print plot for mathy things' do
+    mock_fixture('x^2')
+    send_command 'alpha x^2'
+    expect(replies.last).to eq('http://www2.wolframalpha.com/Calculate/MSP/MSP8620hdi8ba18h005cd0000268f85ce36b8h331?MSPStoreType=image/gif&s=15')
+  end
+
   it 'will error missing config' do
     registry.configure do |config|
       config.handlers.onewheel_wolfram_alpha.api_uri = 'http://api.wolframalpha.com/v2/query?input=[query]&appid=[appid]'

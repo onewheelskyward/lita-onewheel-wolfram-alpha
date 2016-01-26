@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+             error='false'
+             numpods='9'
+             datatypes='Geometry'
+             timedout=''
+             timedoutpods=''
+             timing='1.657'
+             parsetiming='0.15'
+             parsetimedout='false'
+             recalculate=''
+             id='MSPa8320hdi8ba18h005cd0000476562i1a2hd704a'
+             host='http://www2.wolframalpha.com'
+             server='15'
+             related='http://www2.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa8420hdi8ba18h005cd00003hf14ed530f75ebh&amp;s=15'
+             version='2.6'>
+  <pod title='Input'
+       scanner='Identity'
+       id='Input'
+       position='100'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP8520hdi8ba18h005cd00002ii64bc919d4eiah?MSPStoreType=image/gif&amp;s=15'
+           alt='x^2'
+           title='x^2'
+           width='15'
+           height='18' />
+      <plaintext>x^2</plaintext>
+    </subpod>
+  </pod>
+  <pod title='Plot'
+       scanner='Plotter'
+       id='Plot'
+       position='200'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP8620hdi8ba18h005cd0000268f85ce36b8h331?MSPStoreType=image/gif&amp;s=15'
+           alt=''
+           title=''
+           width='333'
+           height='157' />
+      <plaintext></plaintext>
+    </subpod>
+  </pod>
+  <pod title='Geometric figure'
+       scanner='Geometry'
+       id='GeometricFigure (ofBoundary)'
+       position='300'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP8720hdi8ba18h005cd00003dcdh5156707h635?MSPStoreType=image/gif&amp;s=15'
+           alt='parabola'
+           title='parabola'
+           width='59'
+           height='18' />
+      <plaintext>parabola</plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='Properties'
+             input='GeometricFigure (ofBoundary)__Properties' />
+    </states>
+  </pod>
+  <pod title='Root'
+       scanner='Reduce'
+       id='Root'
+       position='400'
+       error='false'
+       numsubpods='1'
+       primary='true'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP8820hdi8ba18h005cd00000d566b84f54h8dg5?MSPStoreType=image/gif&amp;s=15'
+           alt='x = 0'
+           title='x = 0'
+           width='36'
+           height='18' />
+      <plaintext>x = 0</plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='Step-by-step solution'
+             input='Root__Step-by-step solution' />
+    </states>
+  </pod>
+  <pod title='Polynomial discriminant'
+       scanner='Expression'
+       id='PolynomialDiscriminant'
+       position='500'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP8920hdi8ba18h005cd000022f85hh1873dc931?MSPStoreType=image/gif&amp;s=15'
+           alt='Delta = 0'
+           title='Delta = 0'
+           width='38'
+           height='18' />
+      <plaintext>Delta = 0</plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='Show class number'
+             input='PolynomialDiscriminant__Show class number' />
+    </states>
+  </pod>
+  <pod title='Properties as a real function'
+       scanner='FunctionProperties'
+       id='PropertiesAsARealFunction'
+       position='600'
+       error='false'
+       numsubpods='3'>
+    <subpod title='Domain'>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP9020hdi8ba18h005cd00002f81538eeddh95hb?MSPStoreType=image/gif&amp;s=15'
+           alt='R  (all real numbers)'
+           title='R  (all real numbers)'
+           width='138'
+           height='18' />
+      <plaintext>R  (all real numbers)</plaintext>
+    </subpod>
+    <subpod title='Range'>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP9120hdi8ba18h005cd00003efe8f3290b61743?MSPStoreType=image/gif&amp;s=15'
+           alt='{y element R : y&gt;=0}  (all non-negative real numbers)'
+           title='{y element R : y&gt;=0}  (all non-negative real numbers)'
+           width='312'
+           height='18' />
+      <plaintext>{y element R : y&gt;=0}  (all non-negative real numbers)</plaintext>
+    </subpod>
+    <subpod title='Parity'>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP9220hdi8ba18h005cd00001i3728gb1b1cdb26?MSPStoreType=image/gif&amp;s=15'
+           alt='even'
+           title='even'
+           width='30'
+           height='18' />
+      <plaintext>even</plaintext>
+    </subpod>
+    <infos count='1'>
+      <info text=' is the set of real numbers'>
+        <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP9320hdi8ba18h005cd000047bc2d64ah9g1b58?MSPStoreType=image/gif&amp;s=15'
+             alt=' is the set of real numbers'
+             title=' is the set of real numbers'
+             width='181'
+             height='18' />
+        <link url='http://reference.wolfram.com/mathematica/ref/Reals.html'
+              text='Documentation'
+              title='Documentation' />
+        <link url='http://mathworld.wolfram.com/R.html'
+              text='Definition'
+              title='MathWorld' />
+      </info>
+    </infos>
+  </pod>
+  <pod title='Derivative'
+       scanner='Derivative'
+       id='Derivative'
+       position='700'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP9420hdi8ba18h005cd00000da6bbhh93292gfg?MSPStoreType=image/gif&amp;s=15'
+           alt='d/dx(x^2) = 2 x'
+           title='d/dx(x^2) = 2 x'
+           width='86'
+           height='36' />
+      <plaintext>d/dx(x^2) = 2 x</plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='Step-by-step solution'
+             input='Derivative__Step-by-step solution' />
+    </states>
+  </pod>
+  <pod title='Indefinite integral'
+       scanner='Integral'
+       id='IndefiniteIntegral'
+       position='800'
+       error='false'
+       numsubpods='1'
+       primary='true'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP9520hdi8ba18h005cd00001i7gfg66abec9hhe?MSPStoreType=image/gif&amp;s=15'
+           alt=' integral x^2  dx = x^3/3+constant'
+           title=' integral x^2  dx = x^3/3+constant'
+           width='166'
+           height='39' />
+      <plaintext> integral x^2  dx = x^3/3+constant</plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='Step-by-step solution'
+             input='IndefiniteIntegral__Step-by-step solution' />
+    </states>
+  </pod>
+  <pod title='Global minimum'
+       scanner='GlobalExtrema'
+       id='GlobalMinimum'
+       position='900'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP9620hdi8ba18h005cd000026056i7ifhai8972?MSPStoreType=image/gif&amp;s=15'
+           alt='min{x^2} = 0 at x = 0'
+           title='min{x^2} = 0 at x = 0'
+           width='140'
+           height='22' />
+      <plaintext>min{x^2} = 0 at x = 0</plaintext>
+    </subpod>
+  </pod>
+</queryresult>
