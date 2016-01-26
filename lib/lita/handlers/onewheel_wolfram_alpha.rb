@@ -22,8 +22,10 @@ module Lita
 
       def parse_response(noko_doc, query)
         success_node = noko_doc.xpath('queryresult').attribute('success')
+        Lita.logger.debug "Success attr: #{success_node.to_s}"
         if success_node.to_s == 'true'
           pods = noko_doc.xpath('//pod')
+          Lita.logger.debug "Pod title: #{pods[1].attribute('title').to_s}"
           if pods[1].attribute('title').to_s == 'Plot'
             pods[1].xpath('//img')[1].attribute('src').to_s
           else
@@ -36,6 +38,7 @@ module Lita
       end
 
       def make_api_call(query)
+        Lita.logger.debug "Making api call for #{query}"
         uri = build_uri query
         response = RestClient.get(uri)
         Nokogiri::XML response.to_s
