@@ -45,4 +45,10 @@ describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
     send_command 'alpha pi'
     expect(replies.last).to eq(nil)
   end
+
+  it 'will single-line a multi-line plaintext' do
+    mock_fixture('multiline-plaintext')
+    send_command 'alpha light years'
+    expect(replies.last).to eq('1 ly | 0.3066 pc  (parsecs) | 63241 au  (astronomical units) | 9.461&#xD7;10^12 km  (kilometers) | 9.461&#xD7;10^15 meters | 5.879 trillion miles')
+  end
 end

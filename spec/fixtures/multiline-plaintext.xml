@@ -1,0 +1,284 @@
+
+<?xml version='1.0' encoding='UTF-8'?>
+<queryresult success='true'
+             error='false'
+             numpods='7'
+             datatypes='Quantity'
+             timedout=''
+             timedoutpods=''
+             timing='2.17'
+             parsetiming='0.495'
+             parsetimedout='false'
+             recalculate=''
+             id='MSPa359022hif15agcce362900005ac6ig6896h8a8a4'
+             host='http://www2.wolframalpha.com'
+             server='1'
+             related='http://www2.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa359122hif15agcce3629000042178if829i81c3b&amp;s=1'
+             version='2.6'>
+  <pod title='Input interpretation'
+       scanner='Identity'
+       id='Input'
+       position='100'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP359222hif15agcce36290000464980bghgcb18h3?MSPStoreType=image/gif&amp;s=1'
+           alt='ly  (light year)'
+           title='ly  (light year)'
+           width='86'
+           height='18' />
+      <plaintext>ly  (light year)</plaintext>
+    </subpod>
+  </pod>
+  <pod title='Conversions to other units'
+       scanner='Unit'
+       id='ConversionToOtherUnits'
+       position='200'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP359322hif15agcce36290000312a6092c8i17107?MSPStoreType=image/gif&amp;s=1'
+           alt='1 ly | 0.3066 pc  (parsecs)
+  | 63241 au  (astronomical units)
+  | 9.461×10^12 km  (kilometers)
+  | 9.461×10^15 meters
+  | 5.879 trillion miles'
+           title='1 ly | 0.3066 pc  (parsecs)
+  | 63241 au  (astronomical units)
+  | 9.461×10^12 km  (kilometers)
+  | 9.461×10^15 meters
+  | 5.879 trillion miles'
+           width='262'
+           height='150' />
+      <plaintext>1 ly | 0.3066 pc  (parsecs)
+        | 63241 au  (astronomical units)
+        | 9.461×10^12 km  (kilometers)
+        | 9.461×10^15 meters
+        | 5.879 trillion miles</plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='Show exact conversions'
+             input='ConversionToOtherUnits__Show exact conversions' />
+    </states>
+    <infos count='1'>
+      <info>
+        <units count='1'>
+          <unit short='ly'
+                long='light years' />
+          <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP359422hif15agcce3629000020i1hh6e7gbd9h3e?MSPStoreType=image/gif&amp;s=1'
+               width='110'
+               height='26' />
+        </units>
+      </info>
+    </infos>
+  </pod>
+  <pod title='Conversions from other units'
+       scanner='Unit'
+       id='ConversionFromOtherUnits'
+       position='300'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP359522hif15agcce3629000045c1fa8i1a8gdcf3?MSPStoreType=image/gif&amp;s=1'
+           alt='1 pc | 3.262 ly
+1 au | 1.581×10^-5 ly
+1 km | 1.057×10^-13 ly
+1 m | 1.057×10^-16 ly
+1 mi | 1.701×10^-13 ly'
+           title='1 pc | 3.262 ly
+1 au | 1.581×10^-5 ly
+1 km | 1.057×10^-13 ly
+1 m | 1.057×10^-16 ly
+1 mi | 1.701×10^-13 ly'
+           width='178'
+           height='157' />
+      <plaintext>1 pc | 3.262 ly
+        1 au | 1.581×10^-5 ly
+        1 km | 1.057×10^-13 ly
+        1 m | 1.057×10^-16 ly
+        1 mi | 1.701×10^-13 ly</plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='Show exact conversions'
+             input='ConversionFromOtherUnits__Show exact conversions' />
+    </states>
+    <infos count='1'>
+      <info>
+        <units count='6'>
+          <unit short='au'
+                long='astronomical units' />
+          <unit short='km'
+                long='kilometers' />
+          <unit short='ly'
+                long='light years' />
+          <unit short='mi'
+                long='miles' />
+          <unit short='m'
+                long='meters' />
+          <unit short='pc'
+                long='parsecs' />
+          <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP359622hif15agcce362900004d35cgd7a6db16d6?MSPStoreType=image/gif&amp;s=1'
+               width='165'
+               height='131' />
+        </units>
+      </info>
+    </infos>
+  </pod>
+  <pod title='Physical quantities'
+       scanner='Unit'
+       id='PhysicalQuantity'
+       position='400'
+       error='false'
+       numsubpods='7'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP359722hif15agcce3629000069hde5067a0dii57?MSPStoreType=image/gif&amp;s=1'
+           alt='length'
+           title='length'
+           width='42'
+           height='18' />
+      <plaintext>length</plaintext>
+    </subpod>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP359822hif15agcce3629000024hh29e545d63ed7?MSPStoreType=image/gif&amp;s=1'
+           alt='height'
+           title='height'
+           width='41'
+           height='18' />
+      <plaintext>height</plaintext>
+    </subpod>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP359922hif15agcce3629000063451ei0ef790621?MSPStoreType=image/gif&amp;s=1'
+           alt='depth'
+           title='depth'
+           width='37'
+           height='18' />
+      <plaintext>depth</plaintext>
+    </subpod>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP360022hif15agcce362900002hi3be42ia6c1ge5?MSPStoreType=image/gif&amp;s=1'
+           alt='radius'
+           title='radius'
+           width='41'
+           height='18' />
+      <plaintext>radius</plaintext>
+    </subpod>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP360122hif15agcce3629000058h2a318g75bdaba?MSPStoreType=image/gif&amp;s=1'
+           alt='diameter'
+           title='diameter'
+           width='58'
+           height='18' />
+      <plaintext>diameter</plaintext>
+    </subpod>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP360222hif15agcce362900004ga18aid04eic337?MSPStoreType=image/gif&amp;s=1'
+           alt='distance'
+           title='distance'
+           width='54'
+           height='18' />
+      <plaintext>distance</plaintext>
+    </subpod>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP360322hif15agcce362900002604iaebaf4ig7c0?MSPStoreType=image/gif&amp;s=1'
+           alt='circumference'
+           title='circumference'
+           width='94'
+           height='18' />
+      <plaintext>circumference</plaintext>
+    </subpod>
+    <states count='1'>
+      <state name='More'
+             input='PhysicalQuantity__More' />
+    </states>
+  </pod>
+  <pod title='Unit system'
+       scanner='Unit'
+       id='UnitSystem'
+       position='500'
+       error='false'
+       numsubpods='1'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP360422hif15agcce362900003hi9e0f09f80a265?MSPStoreType=image/gif&amp;s=1'
+           alt='(not in a named unit system)'
+           title='(not in a named unit system)'
+           width='190'
+           height='18' />
+      <plaintext>(not in a named unit system)</plaintext>
+    </subpod>
+  </pod>
+  <pod title='Corresponding quantities for 1 ly'
+       scanner='Unit'
+       id='CorrespondingQuantity'
+       position='600'
+       error='false'
+       numsubpods='2'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP360522hif15agcce3629000068ecia81f5i153f8?MSPStoreType=image/gif&amp;s=1'
+           alt='Light travel time t in vacuum from t = x/c:
+  | 1 year'
+           title='Light travel time t in vacuum from t = x/c:
+  | 1 year'
+           width='282'
+           height='41' />
+      <plaintext>Light travel time t in vacuum from t = x/c:
+        | 1 year</plaintext>
+    </subpod>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP360622hif15agcce36290000488hbe2hah8ei96f?MSPStoreType=image/gif&amp;s=1'
+           alt='Light travel time t in an optical fiber t = 1.48x/c:
+  | 1.5 years'
+           title='Light travel time t in an optical fiber t = 1.48x/c:
+  | 1.5 years'
+           width='320'
+           height='41' />
+      <plaintext>Light travel time t in an optical fiber t = 1.48x/c:
+        | 1.5 years</plaintext>
+    </subpod>
+  </pod>
+  <pod title='Comparisons for 1 ly as distance'
+       scanner='Unit'
+       id=''
+       position='700'
+       error='false'
+       numsubpods='2'>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP360722hif15agcce36290000112c6cgac34hge66?MSPStoreType=image/gif&amp;s=1'
+           alt=' ~~ ( 0.24 ~~ 1/4 ) × distance from Earth to Proxima Centauri (~~ 4.2 ly )'
+           title=' ~~ ( 0.24 ~~ 1/4 ) × distance from Earth to Proxima Centauri (~~ 4.2 ly )'
+           width='418'
+           height='18' />
+      <plaintext> ~~ ( 0.24 ~~ 1/4 ) × distance from Earth to Proxima Centauri (~~ 4.2 ly )</plaintext>
+    </subpod>
+    <subpod title=''>
+      <img src='http://www2.wolframalpha.com/Calculate/MSP/MSP360822hif15agcce3629000011e588gaddf1cb3e?MSPStoreType=image/gif&amp;s=1'
+           alt=' ~~ 0.9 × distance from the Sun to the Oort cloud&apos;s boundary (~~ 1.05×10^16 m )'
+           title=' ~~ 0.9 × distance from the Sun to the Oort cloud&apos;s boundary (~~ 1.05×10^16 m )'
+           width='474'
+           height='18' />
+      <plaintext> ~~ 0.9 × distance from the Sun to the Oort cloud&apos;s boundary (~~ 1.05×10^16 m )</plaintext>
+    </subpod>
+  </pod>
+  <assumptions count='1'>
+    <assumption type='MultiClash'
+                word=''
+                template='Assuming ${word1} is referring to ${desc1}. Use as ${desc2} instead. Use as ${desc3} instead. Use &quot;${word4}&quot; as ${desc4}.'
+                count='4'>
+      <value name='Unit'
+             word='the input'
+             desc='a unit'
+             input='*MC.%7E-_*Unit-' />
+      <value name='Movie'
+             word='the input'
+             desc='a movie'
+             input='*MC.%7E-_*Movie-' />
+      <value name='MusicWork'
+             word='the input'
+             desc='a music work'
+             input='*MC.%7E-_*MusicWork-' />
+      <value name='Book'
+             word='light'
+             desc='a book'
+             input='*MC.%7E-_*Book-' />
+    </assumption>
+  </assumptions>
+</queryresult>

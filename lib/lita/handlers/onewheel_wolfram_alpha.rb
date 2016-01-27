@@ -29,12 +29,16 @@ module Lita
           if pods[1].attribute('title').to_s == 'Plot'
             pods[1].xpath('//img')[1].attribute('src').to_s
           else
-            pods[1].xpath('//plaintext')[1].child.to_s
+            rid_thee_of_extras pods[1].xpath('//plaintext')[1].child.to_s
           end
 
         else
           "Wolfram couldn't parse #{query}."
         end
+      end
+
+      def rid_thee_of_extras(str)
+        str.gsub /\s+\|\s/, ' | '
       end
 
       def make_api_call(query)
