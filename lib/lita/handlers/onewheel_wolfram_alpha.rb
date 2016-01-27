@@ -11,12 +11,13 @@ module Lita
 
       def handle_wolfram_query(response)
         unless config.app_id and config.api_uri
-          Lita.logger.error 'Configuration error!'
+          Lita.logger.error 'lita-onewheel-wolfram-alpha: Configuration error!'
           return
         end
         query = response.matches[0][0]
         api_response = make_api_call query
         reply = parse_response api_response, query
+        Lita.logger.debug "lita-onewheel-wolfram-alpha: Replying with #{reply}"
         response.reply reply
       end
 
@@ -33,7 +34,7 @@ module Lita
           end
 
         else
-          "Wolfram couldn't parse #{query}."
+          "lita-onewheel-wolfram-alpha: Wolfram couldn't parse #{query}."
         end
       end
 
@@ -42,7 +43,7 @@ module Lita
       end
 
       def make_api_call(query)
-        Lita.logger.debug "Making api call for #{query}"
+        Lita.logger.debug "lita-onewheel-wolfram-alpha: Making api call for #{query}"
         uri = build_uri query
         response = RestClient.get(uri)
         Nokogiri::XML response.to_s
@@ -50,7 +51,7 @@ module Lita
 
       def build_uri(query)
         uri = config.api_uri.sub '[query]', CGI::escape(query)
-        uri = uri.sub '[appid]', config.app_id
+        uri.sub '[appid]', config.app_id
       end
     end
     Lita.register_handler(OnewheelWolframAlpha)
