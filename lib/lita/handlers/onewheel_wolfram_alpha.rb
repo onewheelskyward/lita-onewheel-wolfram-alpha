@@ -23,10 +23,10 @@ module Lita
 
       def parse_response(noko_doc, query)
         success_node = noko_doc.xpath('queryresult').attribute('success')
-        Lita.logger.debug "Success attr: #{success_node.to_s}"
+        Lita.logger.debug "lita-onewheel-wolfram-alpha: Success attr: #{success_node.to_s}"
         if success_node.to_s == 'true'
           pods = noko_doc.xpath('//pod')
-          Lita.logger.debug "Pod title: #{pods[1].attribute('title').to_s}"
+          Lita.logger.debug "lita-onewheel-wolfram-alpha: Pod title: #{pods[1].attribute('title').to_s}"
           if pods[1].attribute('title').to_s == 'Plot'
             pods[1].xpath('//img')[1].attribute('src').to_s
           else
