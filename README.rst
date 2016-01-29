@@ -25,9 +25,9 @@ Get yourself a Wolfram Alpha app id here: https://developer.wolframalpha.com/por
   end
 
 Usage
-----
+-----
 :alpha pi: returns "3.14......"
 
 License
-----
+-------
 MIT
