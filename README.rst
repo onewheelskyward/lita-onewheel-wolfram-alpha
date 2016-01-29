@@ -25,8 +25,8 @@ Configuration
 
 Usage
 ----
-bot: alpha pi
+:alpha pi: returns "3.14......"
 
 License
 ----
-[MIT](http://opensource.org/licenses/MIT)
+MIT :target: http://opensource.org/licenses/MIT
