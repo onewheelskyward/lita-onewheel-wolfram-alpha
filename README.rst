@@ -17,12 +17,10 @@ Add lita-onewheel-wolfram-alpha to your Lita instance's Gemfile:
 
 Configuration
 ----
-```
-Lita.configure do |config|
-  config.handlers.wolfram_alpha.app_id = 'yourwolframappid'
-  config.handlers.wolfram_alpha.api_uri = 'http://api.wolframalpha.com/v2/query?input=[query]&appid=[appid]'
-end
-```
+    Lita.configure do |config|
+      config.handlers.onewheel_wolfram_alpha.app_id = 'yourwolframappid'
+      config.handlers.onewheel_wolfram_alpha.api_uri = 'http://api.wolframalpha.com/v2/query?input=[query]&appid=[appid]'
+    end
 
 Usage
 ----
