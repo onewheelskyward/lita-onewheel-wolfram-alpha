@@ -30,4 +30,4 @@ Usage
 
 License
 ----
-MIT :target: http://opensource.org/licenses/MIT
+.. MIT :target: http://opensource.org/licenses/MIT
