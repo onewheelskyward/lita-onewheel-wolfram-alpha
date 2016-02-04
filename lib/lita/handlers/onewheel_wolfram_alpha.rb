@@ -34,7 +34,10 @@ module Lita
           end
 
         else
-          "lita-onewheel-wolfram-alpha: Wolfram couldn't parse #{query}."
+          ["Nope, no #{query} to see here.",
+           "#{query}?",
+           'What\'s that, now?'
+           ].sample
         end
       end
 
@@ -46,6 +49,7 @@ module Lita
         Lita.logger.debug "lita-onewheel-wolfram-alpha: Making api call for #{query}"
         uri = build_uri query
         response = RestClient.get(uri)
+        Lita.logger.debug 'lita-onewheel-wolfram-alpha: ' + response.to_s
         Nokogiri::XML response.to_s
       end
 
