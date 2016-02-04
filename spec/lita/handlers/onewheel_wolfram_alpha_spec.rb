@@ -28,7 +28,11 @@ describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
   it 'will fail gracefully' do
     mock_fixture('boopadoop')
     send_command 'alpha boopadoop'
-    expect(replies.last).to include('Wolfram couldn\'t parse boopadoop.')
+    expect(replies.last).to satisfy { |v|
+      ['Nope, no boopadoop to see here.',
+       'What\'s that, now?',
+       'boopadoop?'].include? v
+    }
   end
 
   it 'will print plot for mathy things' do

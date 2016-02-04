@@ -24,12 +24,17 @@ module Lita
       def parse_response(noko_doc, query)
         success_node = noko_doc.xpath('queryresult').attribute('success')
         Lita.logger.debug "lita-onewheel-wolfram-alpha: Success attr: #{success_node.to_s}"
+
+        # No sense parsing if we didn't have success.
         if success_node.to_s == 'true'
+
           pods = noko_doc.xpath('//pod')
           Lita.logger.debug "lita-onewheel-wolfram-alpha: Pod title: #{pods[1].attribute('title').to_s}"
-          if pods[1].attribute('title').to_s == 'Plot'
+
+          title = pods[1].attribute('title').to_s
+          if title == 'Plot'  # Plot is a graph, grab the image.
             pods[1].xpath('//img')[1].attribute('src').to_s
-          else
+          else  # Plaintext seems to work well for, say, Definition.
             rid_thee_of_extras pods[1].xpath('//plaintext')[1].child.to_s
           end
 
