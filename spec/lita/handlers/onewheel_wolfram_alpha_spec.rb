@@ -55,4 +55,10 @@ describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
     send_command 'alpha light years'
     expect(replies.last).to eq('1 ly | 0.3066 pc  (parsecs) | 63241 au  (astronomical units) | 9.461&#xD7;10^12 km  (kilometers) | 9.461&#xD7;10^15 meters | 5.879 trillion miles')
   end
+
+  it 'will add desired text to the end' do
+    mock_fixture('x^2')
+    send_command 'alpha x^2 <as a service>'
+    expect(replies.last).to eq('http://www2.wolframalpha.com/Calculate/MSP/MSP8620hdi8ba18h005cd0000268f85ce36b8h331?MSPStoreType=image/gif&s=15 as a service')
+  end
 end

@@ -15,8 +15,16 @@ module Lita
           return
         end
         query = response.matches[0][0]
+
+        post_script = ''
+
+        if matches = query.match(/\<(.*)\>/)
+          post_script = " #{matches[1]}"
+        end
+
         api_response = make_api_call query
         reply = parse_response api_response, query
+        reply += post_script
         Lita.logger.debug "lita-onewheel-wolfram-alpha: Replying with #{reply}"
         response.reply reply
       end
