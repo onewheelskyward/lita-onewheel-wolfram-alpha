@@ -62,6 +62,7 @@ module Lita
       def make_api_call(query)
         Lita.logger.debug "lita-onewheel-wolfram-alpha: Making api call for #{query}"
         uri = build_uri query
+        Lita.logger.debug "lita-onewheel-wolfram-alpha: #{uri}"
         response = RestClient.get(uri)
         Lita.logger.debug 'lita-onewheel-wolfram-alpha: ' + response.to_s
         Nokogiri::XML response.to_s
