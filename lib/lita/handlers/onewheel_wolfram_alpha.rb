@@ -19,6 +19,7 @@ module Lita
         post_script = ''
 
         if matches = query.match(/\<(.*)\>/)
+          query.gsub! /\<#{matches[1]}\>/, ''
           post_script = " #{matches[1]}"
         end
 
