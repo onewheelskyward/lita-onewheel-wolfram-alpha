@@ -23,6 +23,11 @@ module Lita
           post_script = " #{matches[1]}"
         end
 
+        # fraction hack
+        if query.match /\// and !query.match /\./
+          query += ".0"
+        end
+
         api_response = make_api_call query
         reply = parse_response api_response, query
         reply += post_script
