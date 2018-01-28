@@ -62,9 +62,9 @@ describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
     expect(replies.last).to eq('http://www2.wolframalpha.com/Calculate/MSP/MSP8620hdi8ba18h005cd0000268f85ce36b8h331?MSPStoreType=image/gif&s=15 as a service')
   end
 
-  # it 'will add .0 to a fraction' do
-  #   mock_fixture('onedividedby2')
-  #   send_command 'alpha 1/2'
-  #   expect(replies.last).to eq('0.5')
-  # end
+  it 'will add .0 to a fraction' do
+    mock_fixture('oneovertwo')
+    send_command 'alpha 1/2'
+    expect(replies.last).to eq('0.5')
+  end
 end
