@@ -18,6 +18,7 @@ describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
   end
 
   it { is_expected.to route_command('alpha') }
+  it { is_expected.to route_command('quote') }
 
   it 'will work' do
     mock_fixture('pi')
@@ -66,5 +67,11 @@ describe Lita::Handlers::OnewheelWolframAlpha, :lita_handler => true do
     mock_fixture('oneovertwo')
     send_command 'alpha 1/2'
     expect(replies.last).to eq('0.5')
+  end
+
+  it 'will quote' do
+    mock_fixture('quote')
+    send_command 'quote amzn'
+    expect(replies.last).to eq('x')
   end
 end

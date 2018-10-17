@@ -8,6 +8,12 @@ module Lita
       config :api_uri
 
       route(/^alpha\s*(.*)/i, :handle_wolfram_query, command: true)
+      route(/^quote\s*(.*)/i, :handle_wolfram_quote, command: true)
+
+      def handle_wolfram_quote(response)
+        response.matches[0][0] = "quote #{response.matches[0][0]}"
+        handle_wolfram_query(response)
+      end
 
       def handle_wolfram_query(response)
         unless config.app_id and config.api_uri
