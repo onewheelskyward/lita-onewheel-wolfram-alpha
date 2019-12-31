@@ -25,7 +25,8 @@ module Lita
         post_script = ''
 
         if matches = query.match(/\<(.*)\>/)
-          query.gsub! /\<#{matches[1]}\>/, ''
+          Lita.logger.debug "Megamatch: #{matches[1]}"
+          query.gsub! /\<.*\>/, ''
           post_script = " #{matches[1]}"
         end
 
@@ -75,7 +76,7 @@ module Lita
         uri = build_uri query
         Lita.logger.debug "lita-onewheel-wolfram-alpha: #{uri}"
         response = RestClient.get(uri)
-        Lita.logger.debug 'lita-onewheel-wolfram-alpha: ' + response.to_s
+        #Lita.logger.debug 'lita-onewheel-wolfram-alpha: ' + response.to_s
         Nokogiri::XML response.to_s
       end
 
