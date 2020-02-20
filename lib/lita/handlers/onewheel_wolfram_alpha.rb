@@ -47,7 +47,7 @@ module Lita
           Lita.logger.debug "lita-onewheel-wolfram-alpha: Pod title: #{pods[1].attribute('title').to_s}"
 
           title = pods[1].attribute('title').to_s
-          if title == 'Plots'  # Plot is a graph, grab the image.
+          if title == 'Plots' or title == 'Plot'  # Plot is a graph, grab the image.
             pods[1].xpath('//img')[1].attribute('src').to_s
           else  # Plaintext seems to work well for, say, Definition.
             rid_thee_of_extras pods[1].xpath('//plaintext')[1].child.to_s
