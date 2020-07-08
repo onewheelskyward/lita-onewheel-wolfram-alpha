@@ -26,6 +26,7 @@ module Lita
 
         # fraction hack
         if query.match /\// and !query.match /\./
+          query.sub! /\s+$/, ''
           query += ".0"
         end
 
