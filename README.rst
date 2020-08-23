@@ -26,7 +26,7 @@ Get yourself a Wolfram Alpha app id here: https://developer.wolframalpha.com/por
 
 Usage
 -----
-:alpha pi: returns "3.14......"
+:a pi: returns "3.14......"
 
 License
 -------
